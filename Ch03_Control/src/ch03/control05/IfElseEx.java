@@ -14,6 +14,7 @@ public class IfElseEx {
 		Scanner sc = new Scanner(System.in);
 		int sel = sc.nextInt();
 		// switch -> ifelse문으로 전환하세요.
+		
 		if(sel == 1)
 			System.out.println("짜장면이 나왔습니다.");
 		else if(sel == 2)
