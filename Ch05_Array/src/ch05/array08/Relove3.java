@@ -9,9 +9,13 @@ System.out.println(Arrays.toString(numArr));
 public class Relove3 {
 	public static void main(String[] args) {
 		int[] num = { 1, 2, 3, 4, 5 };
-		int a, b, c;
-	
-		for ()
+		int a=num[4], b=num[3], c=num[2], d=num[1], e=num[0];
+
+		num[0]=a;
+		num[1]=b;
+		num[2]=c;
+		num[3]=d;
+		num[4]=e;
 		
 		System.out.println(Arrays.toString(num));		
 	}
