@@ -7,11 +7,10 @@ import java.util.Arrays;
 
 public class Resolve1 {
 	public static void main(String[] args) {
-		int[] scores = {3, 2, 5, 4, 1};
+		int[] scores = { 3, 2, 5, 4, 1 };
 		Arrays.sort(scores);
-		
-		for(int i=1;i<scores.length;i++) {
-			
-		}
+
+		System.out.println("최소값은 " + scores[0]);
+		System.out.println("최대값은 " + scores[scores.length - 1]);
 	}
 }
