@@ -15,6 +15,7 @@ public class Resolve1 {
 		System.out.println("큰 값 = " + num1);
 	}
 
+	
 	// 작은값을 반환하는 메서드
 	public static void small(int num0, int num1) {
 		if (num0 < num1)
@@ -22,6 +23,7 @@ public class Resolve1 {
 		System.out.println("작은 값 = " + num0);
 	}
 
+	
 	// 정수를 입력받는 메서드
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

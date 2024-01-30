@@ -6,7 +6,7 @@ total메서드를 작성하고 사용해보세요.*/
 
 public class Resolve3 {
 	public static void main(String[] args) {
+	
 		
 	}
-
 }
