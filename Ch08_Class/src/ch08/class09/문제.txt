@@ -1,9 +1,15 @@
-1. 중화요리집을 임의대로 클래스로 만드세요
+1.FruitMain클래스에		
+	현재는 buyer.buyApple(seller, 2000); 처럼 프로그래밍되어
+	있습니다.
+	아래처럼 seller를 중심으로 수정하세요.
+	seller.saleApple(buyer, 2000);
 
-2. 나는 마트에 가서 5000원을 주고 배 가격 2500를 샀다를 
+2. 중화요리집을 임의대로 클래스로 만드세요
+
+3. 나는 마트에 가서 5000원을 주고 배 가격 2500를 샀다를 
    클래스로 설계해서 프로그래밍 하세요
    
-3. 노래를 나타내는 Song이라는 클래스를 설계하세요.
+4. 노래를 나타내는 Song이라는 클래스를 설계하세요.
    <필드>
     노래제목 title
     가수    artist
@@ -20,7 +26,7 @@
     ABBA의 "Dancing Queen"노래를 Song객체로 생성하고
     Show()로 출력하세요
 
-4. Rectangle클래스를 작성하세요
+5. Rectangle클래스를 작성하세요
    int타입의 x1, y1, x2, y2 : 사각형을 구성하는 두 점의 좌표
    void set(int x1, int y1, int x2, int y2) : 좌표 설정
    int square() : 사각형 넓이 리턴
