@@ -17,4 +17,5 @@ public class FruitBuyer {
 		System.out.println("현재 잔액 : " + money);
 		System.out.println("사과 개수 : " + numOfApple);
 	}
+	
 }
