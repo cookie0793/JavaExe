@@ -7,9 +7,9 @@ public class Child extends Father{
 	Child(){
 		System.out.println("Child 생성자");
 	}
-
+	
 	Child(int score, long money, float day){
-		super(score, money); //Father의 매개변수 생성자 호출
+		super(score, money);	// Father의 매개변수 생성자 호출
 		this.day = day;
 		System.out.println("Child 매개변수 생성자");
 	}

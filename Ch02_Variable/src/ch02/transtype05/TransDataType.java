@@ -1,12 +1,13 @@
 package ch02.transtype05;
 
 public class TransDataType {
+
 	public static void main(String[] args) {
-		int total = 297; // 총점
-		int stNum = 4;   // 학생수
-		double avg = 0.; //평균
+		int total = 297;	// 총점
+		int stNum = 4;		// 학생수
+		double avg = 0.;	// 평균
 		System.out.println("총점은 " + total + "입니다.");
-		System.out.println("평균은 " + (total/stNum) + "입니다");
+		System.out.println("평균은 " + (total/stNum) + "입니다.");
 		avg = total/stNum;
 		System.out.println("평균은 " + avg + "입니다.");
 		// (double)total : 컴파일러에 의해 정수 total은 double로 변환
@@ -22,10 +23,14 @@ public class TransDataType {
 		
 		char ch = 'A';
 		System.out.println(ch);
-		System.out.println((int)ch); //A라는 값을 숫자로 보고싶을때
-		System.out.println((int)'a'); //A와 a의 저장된 숫자값은 다르다
+		System.out.println((int)ch);
+		System.out.println((int)'a');
 		System.out.println((char)66);
 		System.out.println((char)98);
 	}
 
 }
+
+
+
+

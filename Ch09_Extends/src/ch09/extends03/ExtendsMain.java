@@ -1,5 +1,6 @@
 package ch09.extends03;
 
+// 필드 또한 상속이 된다.
 public class ExtendsMain {
 	public static void main(String[] args) {
 		Child child = new Child();

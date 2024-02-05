@@ -1,5 +1,9 @@
 package ch09.extends04;
 
+/* super는 부모 생성자를 호출하는 것으로
+ * 자식 생성자에서 부모 생성자를 통해
+ * 초기화할 때 자식 생성자에서 호출해준다.
+ * */
 public class ExtendsMain {
 	public static void main(String[] args) {
 		Child child = new Child(7, 99999L, 72);

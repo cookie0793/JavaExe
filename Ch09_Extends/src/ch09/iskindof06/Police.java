@@ -1,8 +1,8 @@
 package ch09.iskindof06;
 
 public class Police extends Gun{
-	
-	private int handCuffs; //handCuffs는 권총을 발사하는 행위를 표현
+
+	private int handCuffs;
 	
 	public Police(int bullet, int handCuffs) {
 		super(bullet);
@@ -15,6 +15,6 @@ public class Police extends Gun{
 		}else {
 			System.out.println("Miss...");
 		}
+		
 	}
-
 }

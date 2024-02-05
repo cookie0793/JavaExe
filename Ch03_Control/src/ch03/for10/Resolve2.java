@@ -1,28 +1,38 @@
 package ch03.for10;
 
+import java.util.Scanner;
+
+//2. 369게임을 작성합니다.
+//1~99까지의 정수를 입력받고
+//3,6,9중 하나가 있으면 "박수짝"을 출력하고
+//2개가 있으면 "박수짝짝"을 출력하세요
+//예를 들어 13은 "박수짝"
+//36인 경우는 "박수짝짝"을 출력하면 됩니다.
 public class Resolve2 {
 	public static void main(String[] args) {
-	
-	
-	for(int i=1;i<=99;i++) {
-		boolean a=false;
-		boolean b=false;
+		Scanner sc = new Scanner(System.in);
 		
-		int num = i % 10;
-		if(num == 3 || num == 6 || num == 9) {
-			a = true;
+		while(true) {		
+			System.out.print("1~99까지 정수 입력(음수면 종료) >> ");
+			int num = sc.nextInt();
+			if(num < 0)
+				break;
+			int n10 = num/10;
+			int n1 = num%10;
+			
+			int cnt = 0;
+			if(n10==3 || n10==6 || n10==9)
+				cnt++;
+			if(n1==3 || n1==6 || n1==9)
+				cnt++;
+			
+			if(cnt==1)
+				System.out.println("박수짝");
+			else if(cnt==2)
+				System.out.println("박수짝짝");
 		}
+		System.out.println("End~");
 		
-		num = i /10;
-		if(num ==3 || num == 6 || num == 9) {
-			b = true;
-		}
-		if (a&&b==true) {
-			System.out.println("짝짝");}
-			else if(a||b==true)
-				System.out.println("짝");
-			else
-				System.out.println(i + " ");
-		}
+		sc.close();
 	}
 }

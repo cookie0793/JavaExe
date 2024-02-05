@@ -7,7 +7,6 @@ public class Child extends Father{
 	Child(){
 		System.out.println("Child 생성자");
 	}
-
 	
 	void play() {
 		System.out.println("인생이 즐겁다^^");

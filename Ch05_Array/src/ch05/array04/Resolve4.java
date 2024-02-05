@@ -1,22 +1,25 @@
 package ch05.array04;
 
+import java.util.Arrays;
+
+//4. int배열을 10개 생성하세요.
+//int배열에 3의 배수를 차례대로 저장하세요.
+//그리고 거꾸로 출력하세요.
 public class Resolve4 {
 	public static void main(String[] args) {
-		int[]num = new int [10];
-		num[0]=3;
-		num[1]=6;
-		num[2]=9;
-		num[3]=12;
-		num[4]=15;
-		num[5]=18;
-		num[6]=21;
-		num[7]=24;
-		num[8]=27;
-		num[9]=30;
+		int[] numArr = new int[10];
 		
-		for(int i = 9;i>=0;i--) {
-			System.out.println(num[i] + " ");
+		for(int i=0;i<numArr.length;i++) {
+			numArr[i] = 3*(i+1);
 		}
 		
+		System.out.println(Arrays.toString(numArr));
+		
+		for(int i=numArr.length-1;i>=0;i--) {
+			System.out.print(numArr[i] + " ");
+		}
 	}
 }
+
+
+

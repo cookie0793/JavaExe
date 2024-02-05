@@ -7,8 +7,8 @@ public class Operator {
 		int result = 0;
 		int num0 = 0, num1 = 0;
 		
-		// 라이브러리 (jdk를 포함한)에 존재하는 클래스는
-		// ctrl + shift = o를 누르면 자동으로
+		// 라이브리리(jdk를 포함한)에 존재하는 클래스는
+		// Ctrl + Shift + o를 누르면 자동으로
 		// package경로를 등록해준다.
 		// jdk에 있는 클래스이고 키보드 입력을 받을 때 사용한다.
 		Scanner sc = new Scanner(System.in);
@@ -24,7 +24,14 @@ public class Operator {
 		result = num0 + num1;
 		System.out.println("결과는 " + result);
 		
-		
-		sc.close();   // 키보드와 연결을 닫는다.
+		sc.close(); 	// 키보드와 연결을 닫는다.
 	}
 }
+
+
+
+
+
+
+
+

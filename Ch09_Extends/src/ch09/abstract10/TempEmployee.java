@@ -1,21 +1,21 @@
 package ch09.abstract10;
 
 // 임시직 사원
-public class TempEmployee extends Employee {
+public class TempEmployee extends Employee{
+	
+	protected int yearSalary;		// 연봉
+	protected int hireYear;			// 계약기간
 
-	protected int yearSalary; // 연봉
-	protected int hireYear; // 계약기간
-
-	public TempEmployee(String empno, String name, int yearSalary, int hireYear) {
+	public TempEmployee(String empno, String name,
+					int yearSalary, int hireYear) {
 		super(empno, name);
 		this.yearSalary = yearSalary;
 		this.hireYear = hireYear;
-
 	}
 
 	@Override
 	public double getMonthPay() {
-		double mPay = (double) yearSalary / 12;
+		double mPay = (double)yearSalary/12;
 		return mPay;
 	}
 
@@ -23,8 +23,13 @@ public class TempEmployee extends Employee {
 	public void showEmployeeInfo() {
 		super.showEmployeeInfo();
 		System.out.println("yearSalary : " + yearSalary);
-		System.err.println("hireYear : " + hireYear);
-		System.out.println("monthPay : " + getMonthPay());
+		System.out.println("hireYear : " + hireYear);
+		System.out.printf("monthPay : %.2f\n", getMonthPay());
 	}
 
+	
 }
+
+
+
+

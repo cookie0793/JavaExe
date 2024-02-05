@@ -8,6 +8,7 @@ import ch08.class09.answer02.ChineseRestaurant;
 import ch08.class09.answer03.PearBuyer;
 import ch08.class09.answer03.PearSeller;
 import ch08.class09.answer04.Song;
+import ch08.class09.answer05.Rectangle;
 
 
 /*
@@ -157,7 +158,28 @@ public static void answer4(Scanner sc) {
 
 // 5번 문제에 대한 풀이
 public static void answer5(Scanner sc) {
-
+	Rectangle rc0 = new Rectangle();
+	rc0.set(10, 10, 30, 30);
+	
+	Rectangle rc1 = new Rectangle();
+	rc1.set(10, 10, 30, 30);
+	
+	Rectangle rc2 = new Rectangle();
+	rc2.set(20, 20, 50, 50);
+	
+	rc0.show();
+	rc1.show();
+	rc2.show();
+	
+	if(rc0.equals(rc1))
+		System.out.println("rc0과 rc1은 같습니다.");
+	else
+		System.out.println("rc0과 rc1은 다릅니다.");
+	
+	if(rc0.equals(rc2))
+		System.out.println("rc0과 rc2은 같습니다.");
+	else
+		System.out.println("rc0과 rc2은 다릅니다.");
 }
 
 // 전체의 시작인 main 메서드

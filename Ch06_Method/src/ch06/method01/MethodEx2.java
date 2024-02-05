@@ -2,14 +2,14 @@ package ch06.method01;
 
 import java.util.Scanner;
 
-// Method를 만들기 전 코드
+// 메서드를 만들기 전 코드
 public class MethodEx2 {
-	// main메서드 내의 계산하는 부분을 옮긴다.    //매개변수들
-	public static void calcArith(int num0, int num1, String op) { 
-		int result = 0; // 결과값 저장 변수
-
+	// main 메서드 내의 계산하는 부분을 옮긴다.
+	public static void calcArith(int num0, int num1, String op) {
+		int result = 0;		// 결과값 저장 변수
+		
 		// 2) 계산을 하는 부분
-		switch (op) {
+		switch(op) {
 		case "+":
 			result = num0 + num1;
 			break;
@@ -33,19 +33,17 @@ public class MethodEx2 {
 		// 3) 결과값 출력
 		System.out.println("결과값은 " + result + "입니다.");
 	}
+	
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
+	
+		calcArith(1, 2, "+");		
 		
-		// 1) 처리하기 전에 입력받는 부분
-		System.out.print("1번째 정수 입력 >> ");
-		int num0 = sc.nextInt();
-		System.out.print("2번째 정수 입력 >> ");
-		int num1 = sc.nextInt();
-		System.out.print("연산자 입력(+ - * / %) >> ");
-		String op = sc.next();
-		
-		calcArith(num0, num1, op);
-		
-	sc.close();
+	
 	}
 }
+
+
+
+
+
+

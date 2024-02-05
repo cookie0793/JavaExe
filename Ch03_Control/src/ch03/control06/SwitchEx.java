@@ -9,7 +9,7 @@ public class SwitchEx {
 		System.out.println("가을");
 		System.out.println("겨울");
 		System.out.print("선택 >> ");
-		
+				
 		Scanner sc = new Scanner(System.in);
 		String sel = sc.nextLine();
 		switch(sel) {
@@ -27,8 +27,10 @@ public class SwitchEx {
 			break;
 		}
 		
-		
 		sc.close();
 	}
-
 }
+
+
+
+

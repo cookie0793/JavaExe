@@ -2,7 +2,7 @@ package ch06.method01;
 
 import java.util.Scanner;
 
-// Method를 만들기 전 코드
+// 메서드를 만들기 전 코드
 public class MethodEx {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -14,18 +14,22 @@ public class MethodEx {
 		int num1 = sc.nextInt();
 		System.out.print("연산자 입력(+ - * / %) >> ");
 		String op = sc.next();
-		int result = 0; // 결과값 저장 변수
-
+		int result = 0;		// 결과값 저장 변수
+		
 		// 2) 계산을 하는 부분
-		switch (op) {
+		switch(op) {
 		case "+":
 			result = num0 + num1;
+			break;
 		case "-":
 			result = num0 - num1;
+			break;
 		case "*":
 			result = num0 * num1;
+			break;
 		case "/":
 			result = num0 / num1;
+			break;
 		case "%":
 			result = num0 % num1;
 			break;
@@ -36,6 +40,14 @@ public class MethodEx {
 		
 		// 3) 결과값 출력
 		System.out.println("결과값은 " + result + "입니다.");
-	sc.close();
+		
+		
+		sc.close();
 	}
 }
+
+
+
+
+
+

@@ -7,12 +7,12 @@ public class CompOperator {
 		int num2 = 100;
 		
 		boolean bVal = num0 > num1; // 100 > 10
-		System.out.println(bVal);   // true
-		bVal = num0 < num1;         // 100 < 10
-		System.out.println(bVal);   // false
-		bVal = num0 == num2;        // 100 == 100
-		System.out.println(bVal);   // true
-		bVal = num0 >= num2;        // 100보다 큰경우에도 참이고 같은경우에도 참이다.(이상)
-		System.out.println(bVal);   // true
+		System.out.println(bVal);	// true
+		bVal = num0 < num1;  // 100 < 10
+		System.out.println(bVal);	// false
+		bVal = num0 == num2;	// 100 == 100
+		System.out.println(bVal);
+		bVal = num0 >= num2; // 100 >= 100
+		System.out.println(bVal);	// true
 	}
 }
