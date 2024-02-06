@@ -1,10 +1,10 @@
-package ch10.collection01.ch15.sec02.exam01;
+package ch10.collection01.ch15.sec02.exam02;
 
 public class Board {
 	private String subject;
 	private String content;
 	private String writer;
-
+	
 	public Board(String subject, String content, String writer) {
 		this.subject = subject;
 		this.content = content;
