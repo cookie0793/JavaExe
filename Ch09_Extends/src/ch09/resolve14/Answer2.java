@@ -52,11 +52,11 @@ public class Answer2 implements IQuestionAnswer {
 			
 			int movie = 0, music = 0, readBook = 0;
 			try {
-			int movie = tabletTester.movieTest();
+			movie = tabletTester.movieTest();
 			System.out.printf("---ㅡmovie 테스트 점수는 %d입니다\n", score[i]);
-			int music = tabletTester.musicTest();
+			music = tabletTester.musicTest();
 			System.out.printf("---music 테스트 점수는 %d입니다\n", score[i]);
-			int readBook = tabletTester.readBookTest();
+			readBook = tabletTester.readBookTest();
 			System.out.printf("---readbook 테스트 점수는 %d입니다\n", score[i]);
 			}catch(Exception ex) {
 				ex.printStackTrace();
@@ -82,7 +82,7 @@ public class Answer2 implements IQuestionAnswer {
 		System.out.println(tabletArr[maxIdx].getClass().getName());
 	}
 
-}
+
 
 	
 	
